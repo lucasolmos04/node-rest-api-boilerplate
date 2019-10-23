@@ -3,7 +3,7 @@ const endpoint = 'https://2eja2nqth0.execute-api.us-east-1.amazonaws.com/api/use
 const method = {method: 'get'};
 
 
-const getUsers = (endpoint, method)=>{
+const getUsers = () =>{
     return fetch(endpoint, method)
     .then(response => response.json())
     .catch((err) =>{
