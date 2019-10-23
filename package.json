@@ -16,7 +16,7 @@
     "test": "mocha test/unit/**"
   },
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Lucas Maximiliano Olmos",
+    "email": "lucolmos@gmail.com"
   }
 }
