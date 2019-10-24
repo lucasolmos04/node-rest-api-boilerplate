@@ -39,3 +39,34 @@ Services to consume
 Please document all the things that you consider necessary. Follow the good practices followed in the course.
 
 Good luck! 💪
+
+
+# New Features!
+
+  - Api that returns all users with their personal data
+  - Developed with node and express
+  - Use mocha and chai libraries for test unit
+  - Use the moment library to handle dates
+
+### Endpoint /users
+ - Example return api
+ -  "users": [
+        {
+            "id": 3426243159,
+            "name": "Diego Matias",
+            "lastname": "Pascual",
+            "birthday": "1985-08-20",
+            "is_active": true,
+            "email": "dpascual@email.com",
+            "genre": "Masculino"
+        },
+        {
+            "id": 3323683023,
+            "name": "Marco Hidalgo",
+            "lastname": "Delgado",
+            "birthday": "1991-04-21",
+            "is_active": false,
+            "email": "mdelgado@email.com",
+            "genre": "Masculino"
+        }
+      ]
