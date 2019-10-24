@@ -18,7 +18,8 @@ class UsersCtrl  {
         try
         {
             const users = await getUsers();
-           
+            
+            //Go through the object and calculate the age for each user
             for(let i = 0; i < users.users.length; i ++){
                 let user = users.users[i];
                 if(user.is_active){
