@@ -15,15 +15,24 @@ const getUsers = () => {
 
 class UsersCtrl  {
     async getUsers(req, res){
-        const users = await getUsers();
-       
-        for(let i = 0; i < users.users.length; i ++){
-            let user = users.users[i];
-            if(user.is_active){
-               user.age = moment().diff(user.birthday, 'years');
+        try
+        {
+            const users = await getUsers();
+           
+            for(let i = 0; i < users.users.length; i ++){
+                let user = users.users[i];
+                if(user.is_active){
+                   user.age = moment().diff(user.birthday, 'years');
+                }
             }
+            res.status(200).json(users);
         }
-        res.status(200).json(users);
+        catch
+        {
+            res.status(500).json({
+                "error": "An error has ocurred"
+            })
+        }
     }
 }
 
